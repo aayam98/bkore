@@ -45,3 +45,6 @@ yarn.lock
 /pages/finance_new_copy
 /pages/finance_old
 /pages/financenew
+
+
+.env
