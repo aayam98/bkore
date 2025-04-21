@@ -40,7 +40,6 @@ yarn-error.log*
 yarn.lock
 
 #development page
-
 /pages/finance_new
 /pages/finance_new_copy
 /pages/finance_old
