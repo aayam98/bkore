@@ -27,7 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-#.env
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -45,6 +45,3 @@ yarn.lock
 /pages/finance_new_copy
 /pages/finance_old
 /pages/financenew
-
-
-.env
