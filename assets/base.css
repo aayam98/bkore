@@ -1,0 +1,395 @@
+:root {
+  --primary: #ffffff;
+  --primary-2: #f1f3f5;
+  --secondary: #000000;
+  --secondary-2: #111;
+  --selection: var(--cyan);
+
+  --text-base: #000000;
+  --text-primary: #000000;
+  --text-secondary: white;
+
+  --hover: rgba(0, 0, 0, 0.075);
+  --hover-1: rgba(0, 0, 0, 0.15);
+  --hover-2: rgba(0, 0, 0, 0.25);
+  --cyan: #22b8cf;
+  --green: #37b679;
+  --red: #da3c3c;
+  --purple: #f81ce5;
+  --blue: #0070f3;
+
+  --pink: #ff0080;
+  --pink-light: #ff379c;
+
+  --magenta: #eb367f;
+
+  --violet: #7928ca;
+  --violet-dark: #4c2889;
+
+  --accent-0: #fff;
+  --accent-1: #fafafa;
+  --accent-2: #eaeaea;
+  --accent-3: #999999;
+  --accent-4: #888888;
+  --accent-5: #666666;
+  --accent-6: #444444;
+  --accent-7: #333333;
+  --accent-8: #111111;
+  --accent-9: #000;
+
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+    'Helvetica', sans-serif;
+}
+
+[data-theme='dark'] {
+  --primary: #000000;
+  --primary-2: #111;
+  --secondary: #ffffff;
+  --secondary-2: #f1f3f5;
+  --hover: rgba(255, 255, 255, 0.075);
+  --hover-1: rgba(255, 255, 255, 0.15);
+  --hover-2: rgba(255, 255, 255, 0.25);
+  --selection: var(--purple);
+
+  --text-base: white;
+  --text-primary: white;
+  --text-secondary: black;
+
+  --accent-9: #fff;
+  --accent-8: #fafafa;
+  --accent-7: #eaeaea;
+  --accent-6: #999999;
+  --accent-5: #888888;
+  --accent-4: #666666;
+  --accent-3: #444444;
+  --accent-2: #333333;
+  --accent-1: #111111;
+  --accent-0: #000;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  overscroll-behavior-x: none;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#loading_id {
+  color: #000;
+}
+
+.gallerySlider .slick-slide {
+  transform: scale(0.8) !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.gallerySlider .slick-center {
+  transform: scale(1.2) !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.bread-promo {
+  height: 50px;
+  width: 250px;
+  background: #000;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.bread-promo:hover {
+  background: #999;
+}
+
+.__pt-mpe-text-or,
+.__pt-mpe-text-as-low-as,
+.__pt-mpe-text-amount,
+.__pt-mpe-text-cycle,
+.__pt-mpe-text-with,
+.__pt-info-link {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.h2Dymanic h2 > strong > span {
+  font-size: 24px;
+}
+
+/* Custom CSS for Slick Slider */
+.slick-slide {
+  z-index: 999;
+  /* display: flex !important; 
+  justify-content: center;
+  align-items: center; */
+  height: 100%; 
+}
+
+.slick-list {
+  /* overflow: hidden;
+  display: flex; */
+}
+
+/* .custom-slider .slick-track {
+  display: flex !important;
+} */
+
+
+/* premium */
+.premiumBanner {
+  background-image: url('../public/PremiumHospatilityFitness/coverImg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.squarbox {
+  background-image: url('../public/PremiumHospatilityFitness/img1.jpeg');
+}
+
+.hexagon {
+  width: 140px;
+  height: 140px;
+  background-color: #3498db;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.hexagon-border {
+  width: 145px;
+  /* Larger size for the border */
+  height: 145px;
+  background-color: rgba(110, 110, 110, 0.5);
+  position: relative;
+  border-radius: 100%;
+}
+
+span:hover .hexagon-border {
+  background-color: #fe0100;
+  width: 145px;
+  /* Larger size for the border */
+  height: 145px;
+  border-radius: 100%;
+}
+
+.circle {
+  width: 190px;
+  height: 190px;
+  background-color: #3498db;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.circle-border {
+  width: 195px;
+  /* Larger size for the border */
+  height: 195px;
+  background-color: rgba(110, 110, 110, 0.5);
+  position: relative;
+  border-radius: 100%;
+}
+
+.anchor {
+  display: block;
+  height: 175px; /* this is the height of your header */
+  margin-top: -175px; /* this is again negative value of the height of your header */
+  visibility: hidden;
+}
+
+.spacing{
+  display: block;
+  height: 175px; /* this is the height of your header */
+  margin-top: -175px; /* this is again negative value of the height of your header */
+  visibility: hidden;
+}
+
+
+span:hover .circle-border {
+  background-color: #fe0100;
+  width: 195px;
+  /* Larger size for the border */
+  height: 195px;
+  border-radius: 100%;
+}
+
+span:hover h1 {
+  color: #fe0100;
+}
+.blogstyle {
+  .blogdescription {
+    /* // General Reset for Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    /* // Specific Heading Styles */
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    h6 {
+      font-size:18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-transform: capitalize;
+    }
+/* 
+    ol, ul {
+      list-style: inherit;
+      margin: 10px 0;
+      padding: revert;
+  } */
+
+  ul {
+    @apply list-disc pl-5;
+  }
+  
+  ol {
+    @apply list-decimal pl-5;
+  }
+  
+  li {
+    @apply text-gray-700 leading-relaxed;
+  }
+
+ 
+    /* // Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.25rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      h6 {
+        font-size: 0.875rem;
+      }
+    }
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+      font-style: italic;
+    }
+    a:hover {
+      color: #fe0100;
+    }
+  }
+}
+
+.listitems{
+  ul{
+  list-style-type: disc !important;
+  padding-left: 1.25rem;
+}
+}
+
+.customtextalign{
+  p{
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+
+.gap-slider {
+  margin: 0 -10px; /* Compensate for slide padding */
+}
+
+.gap-slider .slick-slide {
+  padding: 0 10px; /* This creates the gap */
+  box-sizing: border-box;
+}
